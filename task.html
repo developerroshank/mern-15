@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .box {
+            background: #ffffff;
+            border: 1px solid #ff0000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            padding: 25px;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.02);
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 1.125rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 1.5rem;
+        }
+
+        .desc {
+            color: #555;
+            font-size: 0.975rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #333;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+
+        ul li {
+            padding: 4px 0;
+            color: #444;
+            font-size: 0.975rem;
+        }
+
+        .list__title {
+            font-size: 1rem;
+            color: #444;
+            margin-top: 10px;
+            font-weight: 600;
+            margin-left: 1em;
+        }
+
+        .box__title {
+            color: #444;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0c929;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3 class="name">Roshan Kumar</h3>
+        <p class="desc">
+            A passionate frontend developer currently pursuing MCA. I enjoy creating responsive and user-friendly
+            interfaces, exploring modern web technologies, and continuously improving my skills through hands-on
+            projects.
+        </p>
+    </div>
+
+    <div class="box">
+        <h4>Pursuing in MCA (2025 - 2027)</h4>
+        <p class="desc">
+            Currently pursuing Master of Computer Applications (MCA) from Bhagwati Institute of Technology & Science,
+            where I'm gaining in-depth knowledge of software development, programming concepts, and project-based
+            learning in modern technologies.
+        </p>
+    </div>
+
+    <div class="box">
+        <h4>Hobbies:</h4>
+        <ul>
+            <li>Coding and building frontend projects</li>
+            <li>Exploring new web technologies</li>
+            <li>Reading tech blogs and articles</li>
+            <li>Listening to music</li>
+            <li>Playing cricket</li>
+            <li>Watching tech YouTube channels</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h4>Why MERN Stack?</h4>
+        <ol>
+            <li class="list__title">Single Language (JavaScript Everywhere)</li>
+            <ul>
+                <li>You use JavaScript for both frontend (React) and backend (Node.js + Express).</li>
+                <li>Easier to learn and manage for developers—no need to switch between languages like PHP, Python, etc.
+                </li>
+            </ul>
+
+            <li class="list__title">Full-Stack Development</li>
+            <ul>
+                <li>Frontend: React.js — fast, component-based UI.</li>
+                <li>Backend: Node.js + Express.js — scalable server-side logic.</li>
+                <li>Database: MongoDB — NoSQL, flexible JSON-like storage.</li>
+            </ul>
+
+            <li class="list__title">High Performance</li>
+            <ul>
+                <li>Node.js is non-blocking and event-driven — great for handling many users.</li>
+                <li>React offers fast rendering with virtual DOM.</li>
+            </ul>
+
+            <li class="list__title">Open Source & Free</li>
+            <ul>
+                <li>All parts of the MERN stack are open-source with huge communities.</li>
+                <li>Constant updates, packages, and learning support available.</li>
+            </ul>
+
+            <li class="list__title">MongoDB (NoSQL) Benefits</li>
+            <ul>
+                <li>Works naturally with JSON (which fits JavaScript perfectly).</li>
+                <li>Flexible schema — perfect for modern apps where data can vary.</li>
+            </ul>
+
+            <li class="list__title">React (Frontend Power)</li>
+            <ul>
+                <li>Component-based architecture.</li>
+                <li>Reusable, scalable, SEO-friendly (with Next.js).</li>
+                <li>Works well with REST APIs or GraphQL.</li>
+            </ul>
+
+            <li class="list__title">Scalable and Flexible</li>
+            <ul>
+                <li>Perfect for building from small MVPs to large-scale enterprise apps.</li>
+            </ul>
+
+        </ol>
+
+        <h5 class="box__title">✅ Use Cases</h5>
+
+        <ul>
+            <li>Social media platforms</li>
+            <li>Dashboards and admin panels</li>
+            <li>eCommerce websites</li>
+            <li>Portfolio sites and SaaS products</li>
+        </ul>
+
+        <h5 class="box__title">MERN Stack Overview</h5>
+        <table>
+            <thead>
+                <tr>
+                    <th>Stack Part</th>
+                    <th>Technology</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M</td>
+                    <td>MongoDB</td>
+                    <td>Database</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>Express.js</td>
+                    <td>Backend framework</td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td>React.js</td>
+                    <td>Frontend framework</td>
+                </tr>
+                <tr>
+                    <td>N</td>
+                    <td>Node.js</td>
+                    <td>Server runtime</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
